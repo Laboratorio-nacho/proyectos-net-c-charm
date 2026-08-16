@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "FormHeron";
+}
+
+<div class="row">
+    <form class="col-6" asp-controller="Home" asp-action="ResHeron" method="post">
+        <div class="mb-3">
+            <label for="num1" class="form-label">Ingrese lado a </label>
+            <input type="number" class="form-control" id="lado1" name="lado1">
+        </div>
+        <div class="mb-3">
+            <label for="num1" class="form-label">Ingrese lado b </label>
+            <input type="number" class="form-control" id="lado2" name="lado2">
+        </div>
+        <div class="mb-3">
+            <label for="num1" class="form-label">Ingrese lado c </label>
+            <input type="number" class="form-control" id="lado3" name="lado3">
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary">Calcular</button>
+        </div>
+    </form>
+</div>
+

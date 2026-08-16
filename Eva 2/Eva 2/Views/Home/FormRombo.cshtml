@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <form class="col-6" asp-controller="Home" asp-action="ResPerimetroR" method="post">
+        <div class="mb-3">
+            <label for="num1" class="form-label">Ingrese la longitud de los lados del rombo</label>
+            <input type="number" class="form-control" id="lados" name="lados">
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary">Calcular perimetro</button>
+        </div>
+    </form>
+</div>
+<div class="row">
+    <form class="col-6" asp-controller="Home" asp-action="ResAreaR" method="post">
+        <div class="mb-3">
+            <label for="num1" class="form-label">Ingrese Diagonal mayor</label>
+            <input type="number" class="form-control" id="Dmayor" name="Dmayor">
+        </div>
+        <div class="mb-3">
+            <label for="num1" class="form-label">Ingrese Diagonal menor</label>
+            <input type="number" class="form-control" id="Dmenor" name="Dmenor">
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary">Calcular Area</button>
+        </div>
+    </form>
+</div>

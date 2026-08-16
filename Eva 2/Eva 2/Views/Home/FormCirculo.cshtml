@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <form class="col-6" asp-controller="Home" asp-action="ResCircunferenciaC" method="post">
+        <div class="mb-3">
+            <label for="num1" class="form-label">Ingrese el radio</label>
+            <input type="number" class="form-control" id="radio" name="radio">
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary">Calcular Circunferencia</button>
+        </div>
+    </form>
+</div>
